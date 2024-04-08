@@ -1,0 +1,140 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="per.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#"><img src="Untitled design (3).png" ></a>
+        </div>
+                    <button class="b pic"><i class="fa-regular fa-circle-question me-8"></i></button>
+                    <button class="b pic" onclick="toggleMenu()">
+                        <i class="fa-regular fa-circle-user me-8"></i>
+                    </button> 
+                            <div class="sub-menu-wrap" id="submenu">
+                                <div class="sub-menu">
+                                    <div class="user-info">
+                                        <img src="pexels-italo-melo-2379005.jpg" class="rounded-circle">
+                                        <p>user name</p>
+                                        <p>user email</p>
+                                        <hr>
+                                    </div>
+                                    <div class="link">
+                                        <button id="generalButton"><i class="fa-regular fa-circle-user me-8"></i><p>General information</p>
+                                        </button>
+                                        <script>
+                                            if (!window.location.href.includes("person.html")) {
+                                          document.getElementById("generalButton").addEventListener("click", function() {
+                                          goToPage('person.html');
+                                           });
+                                           } else {
+                                         document.getElementById("generalButton").addEventListener("click", function() {
+                                        console.log("Staying on the current page");
+                                        });
+                                        }
+                                       function goToPage(page) {
+                                       window.location.href = page;
+                                           }
+                                        </script>
+                                        <button onclick="goToPage('security.html')"><i class="fa-solid fa-shield"></i><p>Security</p></button>
+                                        <button onclick="goToPage('invite.html')"><i class="fa-solid fa-share-nodes"></i><p>Invite a friend</p></button>
+                                        <button onclick="goToPage('down.html')"><i class="fa-brands fa-google-play"></i><p>Download app</p></button>
+                                        <button onclick="goToPage('rate.html')"><i class="fa-regular fa-star"></i><p>Rate us</p></button>
+                                        <button onclick="goToPage('about.html')"><i class="fa-solid fa-exclamation"></i><p>About us</p></button>
+                                        <button onclick="goToPage('help.html')"><i class="fa-regular fa-circle-question"></i><p>Help</p></button>
+                                        <hr>
+                                        <button><p style="margin-right: 10px;">Sign Out</p><i class="fa-solid fa-right-from-bracket"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+    </header><br>
+    <div class="con">
+        <div class="main">
+            <div class="row">
+                <div class="col-md-4 mt-1">
+                    <div class="card text-center sidebar">
+                        <p>Basic Information</p>
+                        <img src="4042356.png" class="rounded-circle">
+                        <button><i class="fa-solid fa-cloud-arrow-up"></i></button><p>Replace</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-1"> 
+                    <form class="fo1">
+                        <i class="fa-regular fa-pen-to-square"></i>
+                        <label>Name</label><br>
+                        <input type="text"><br>
+                        <i class="fa-regular fa-pen-to-square"></i>
+                        <label>Change E-mail Address</label><br>
+                        <input type="email"><br>
+                       <i class="fa-regular fa-pen-to-square"></i>
+                        <label>Gender</label><br>
+                        <input type="text"><br>
+                        <i class="fa-regular fa-pen-to-square"></i>
+                        <label>Location</label><br>
+                        <input type="text"><br>
+                        <i class="fa-regular fa-pen-to-square"></i>
+                        <label>Phone Number</label><br>
+                        <input type="number"><br>
+                    </form></div>
+                <div class="col-md-4 mt-1"> 
+                    <form class="fo">
+                        <i class="fa-regular fa-pen-to-square"></i>
+                        <label>Nationality</label><br>
+                        <input type="text"><br>
+                        <i class="fa-regular fa-pen-to-square"></i>
+                        <label>Date of Birth</label><br>
+                        <input type="text" style="width:199px;"><br>
+                        <i class="fa-regular fa-pen-to-square"></i>
+                        <label>Website URL</label><br>
+                        <input type="url"><br>
+                        <i class="fa-regular fa-pen-to-square"></i>
+                        <label>Company</label><br>
+                        <input type="text"><br>
+                        <i class="fa-regular fa-pen-to-square"></i>
+                        <label>Other Website</label><br>
+                        <input type="url"><br>
+                        <button style="margin-right: 10px;">Discard</button>
+                        <button style="margin-left: 10px;">Save changes</button>                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+            <div class="f" class="container" style="text-align: center;">
+                <img src="IMG_20240313_141307.jpg" width="170px">
+                    <ul>
+                        <li> <a href="" class="light">Home</a></li>
+                        <li> <a href="" class="light">Pages</a></li>
+                        <li> <a href="" class="light">Our Team</a></li>
+                        <li> <a href="" class="light">Contact</a></li>
+                        <li> <a href="" class="light">About Us</a></li>
+                    </ul>
+                <p style="font-weight: 600; color: #C39126; margin-top:-20px;">For better experience , download our mobile app</p>
+                <p style="color: #C39126; margin-top:-20px;">Download the app by clicking the link below :</p>
+                <div class="parent d-flex justify-content-center">
+                    <div class="child1"  style="margin-top:-20px;">
+                        <img src="WhatsApp Image 2024-04-08 at 1.49.19 AM (2).jpeg" alt="" width="150px">
+                    </div>
+                    <div class="child2" style=" margin-top:-20px;">
+                        <img src="WhatsApp Image 2024-04-08 at 1.49.19 AM.jpeg" alt="" width="150px" style="margin-top: 7px;">
+                    </div>
+                </div>
+                <hr width="50%" style="margin-left: 25%; margin-top:1px; ">
+                <p style="color: #C39126; margin-top:-17px; ">All copyrights are reserved by 2024 seniors</p>
+            </div>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script>
+        function toggleMenu() {
+        var submenu = document.getElementById("submenu");
+        submenu.classList.toggle("open-menu"); // إضافة/إزالة فئة .open-menu
+    }
+    </script>
+</body>
+</html>
