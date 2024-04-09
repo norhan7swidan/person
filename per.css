@@ -184,6 +184,7 @@ header .logo img {
     justify-content: center;
     align-items: center;
     margin-left:125px ;
+    margin-bottom: 15px;
 }
 .fl{
     color: #c39126;
@@ -191,7 +192,7 @@ header .logo img {
 }
 .con .card i {
     bottom: 20px;
-    right: 205px;
+    right: 225px;
     position: absolute;
     border: 0;
     background-color:white;
